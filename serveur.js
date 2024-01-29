@@ -3,9 +3,9 @@ var url = require("url");
 
 http.createServer(function (req, res) {
     res.writeHead(200, {'Content-Type': 'text/html'});
-    if (req.url == "/acceuil.html"){
+    if (req.url == "/accueil.html"){
         res.write("<!DOCTYPE html><html><body><h1>Acceuil</h1><p>Bienvenue sur l'acceuil</p></body></html>");
-        console.log("Vous êtes à l'acceuil");
+        console.log("Vous êtes à l'accueil");
     }
     if (req.url == "/Logo"){
         res.write('<!DOCTYPE html><html><body><p><img src="https://www.cidj.com/sites/default/files/styles/full_offre/public/2021-10/Epitech-Technology-logo.gif?itok=1zuGzxJz" alt="Photo de plage vue du dessus" /></p></body></html>');
@@ -16,5 +16,5 @@ http.createServer(function (req, res) {
         console.log("Vous êtes sur votre profile");
     }
     res.end();
-  }).listen(8080);
+  }).listen(3001);
   console.log("serveur créé");
